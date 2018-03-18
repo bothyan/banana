@@ -1,0 +1,125 @@
+<view class="top">
+  <view class="left" bindtap="tapLocation">
+    <view class="location">北京</view>
+    <image src="../../images/address_icon.png"></image> 
+  </view>
+  <view class="searchbox" bindtap="tapSearch"> 
+    <image src="../../images/find_icon.png"></image>   
+    <view class="tips">搜索小组活动</view>
+  </view>
+  <view class="creat">创建小组</view>
+</view>
+<swiper indicator-active-color="#000" autoplay="true" interval="2600" circular="true" class="banner">
+  <swiper-item>
+      <image src="../../images/banner.png"  bindtap="tapBanner"></image>
+  </swiper-item>   
+</swiper>
+<view class="navs">
+  <view class="nav">
+    <image src="../../images/nav1.png"></image> 
+    <text>人气小组</text>
+  </view>
+  <view class="nav">
+    <image src="../../images/nav2.png"></image> 
+    <text>本周活动</text>
+  </view>
+  <view class="nav">
+    <image src="../../images/nav3.png"></image> 
+    <text>附近活动</text>
+  </view>
+  <view class="nav">
+    <image src="../../images/nav4.png"></image> 
+    <text>全部分类</text>
+  </view>
+</view>
+
+<view class="panel">
+  <view class="head">
+    <text>我的小组</text>
+    <image src="../../images/moreright.png"></image>
+  </view>
+  <view class="box">
+    <view class="libox" style="width:900rpx;">
+      <view class="li" wx:for="{{[1,2,3]}}">
+        <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+        <image class="pic" src="../../images/banner.png"></image>
+        <view class="title">这里是活动的标题</view>
+        <view class="time-box">
+            <image class="timeicon" src="../../images/time_icon.png"></image>
+            <text class="time">2018-03-17</text>
+        </view>    
+      </view> 
+    </view> 
+  </view>
+</view>
+
+<view class="panel">
+  <view class="head">
+    <text>人气小组</text>
+    <image src="../../images/moreright.png"></image>
+  </view>
+  <view class="box">
+    <view class="libox" style="width:900rpx;">
+      <view class="li" wx:for="{{[1,2,3]}}">
+        <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+        <image class="pic" src="../../images/banner.png"></image>
+        <view class="title">这里是活动的标题</view>
+        <view class="time-box">
+            <image class="timeicon" src="../../images/time_icon.png"></image>
+            <text class="time">2018-03-17</text>
+        </view>    
+      </view> 
+    </view> 
+  </view>
+</view>
+
+<view class="panel">
+  <view class="head">
+    <text>本周活动</text>
+    <image src="../../images/moreright.png"></image>
+  </view>
+  <view class="box">
+    <view class="libox" style="width:900rpx;">
+      <view class="li" wx:for="{{[1,2,3]}}">
+        <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+        <image class="add" src="../../images/add_icon.png"></image>
+        <image class="pic" src="../../images/banner.png"></image>
+        <view class="title">这里是活动的标题</view>
+        <view class="time-box">
+            <image class="timeicon" src="../../images/time_icon.png"></image>
+            <text class="time">2018-03-17</text>
+        </view>    
+      </view> 
+    </view> 
+  </view>
+</view>
+
+<view class="panel">
+  <view class="head">
+    <text>附近活动</text>
+    <image src="../../images/moreright.png"></image>
+  </view>
+  <view class="box">
+    <view class="libox" style="width:900rpx;">
+      <view class="li" wx:for="{{[1,2,3]}}">
+        <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+        <image class="add" src="../../images/add_icon.png"></image>
+        <image class="pic" src="../../images/banner.png"></image>
+        <view class="title">这里是活动的标题</view>
+        <view class="time-box">
+            <image class="timeicon" src="../../images/time_icon.png"></image>
+            <text class="time">2018-03-17</text>
+        </view>    
+      </view> 
+    </view> 
+  </view>
+</view>
+
+<view class="type">
+  <view class="head">
+    <text>发现更多</text>
+  </view>
+  <view class="typeul">
+    <text wx:for="{{[1,2,3,4,5,6,7,8]}}">科技</text>
+  </view>
+</view>
