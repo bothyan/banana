@@ -1,0 +1,24 @@
+
+<view class="content">
+    <input class="title" type="text" placeholder="给小组起一个响亮的名字" />
+    <view class="pic" bindtap="uploadPic">
+        <text>小组海报</text>
+        <image class="right" src="../../images/moreright.png"></image>
+        <image class="photo" src="../../images/photo.png"></image>
+    </view>
+    <view class="address" bindtap="cAddress">
+        <text>地点</text>
+        <image class="right" src="../../images/moreright.png"></image>
+    </view>
+    <view class="tags" bindtap="cAtags">
+        <text>标签</text>
+        <image class="right" src="../../images/moreright.png"></image>
+        <text class="tagtips">最多添加三个标签</text>
+    </view>
+    <view class="des">
+        <view class="tips">小组介绍</view>
+        <textarea name="" placeholder="请介绍下您的小组"></textarea>
+    </view>
+</view>
+
+<view class="create" bindtap="create">创建</view>

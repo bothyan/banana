@@ -5,7 +5,9 @@
     "pages/index/location",
     "pages/activity/index",
     "pages/my/index",
-    "pages/group/index"
+    "pages/group/index",
+    "pages/group/create",
+    "pages/group/tag"
   ],
   "window":{
     "backgroundTextStyle":"light",

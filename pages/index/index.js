@@ -61,5 +61,10 @@ Page({
     wx.navigateTo({
       url:"../group/index"
     });
+  },
+  tapCreate:function(){
+    wx.navigateTo({
+      url:"../group/create"
+    });
   }
 })

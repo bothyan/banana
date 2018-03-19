@@ -1,0 +1,122 @@
+page{
+    background:#f5f5f5;
+}
+.content{
+    background:#fff;
+}
+.title{
+    color:#999;
+    font-size:32rpx;
+    padding:0 24rpx;
+    height:90rpx;
+    line-height:90rpx;
+    border-bottom: 2rpx solid #f5f5f5;
+}
+
+.pic{
+    padding:20rpx 24rpx;
+    height:112rpx;
+    color:#333;
+    font-size:32rpx;
+    border-bottom: 8rpx solid #f5f5f5;
+}
+.pic text{
+    float:left;
+    height:112rpx;
+    line-height:112rpx;
+    display:inline-block;
+}
+.pic .photo{
+    width:112rpx;
+    height:112rpx;
+    float:right;
+    display:inline-block;
+}
+.pic .right{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:38rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+
+.address{
+    width:702rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 2rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+}
+.address text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+.address image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+
+.tags{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+}
+.tags text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+.tags .tagtips{
+    float:right;
+    color:#999;
+    font-size:24rpx;
+}
+.tags image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+
+.des{
+    padding:24rpx;
+}
+.des .tips{
+    color:#333;
+    font-size:32rpx;
+    margin-bottom:20rpx;
+}
+.des textarea{
+    color:#999;
+    font-size:32rpx;
+    width:100%;
+}
+
+.create{
+    color:#333;
+    font-size:32rpx;
+    height:88rpx;
+    line-height:88rpx;
+    width:702rpx;
+    margin:100rpx auto 0;
+    text-align:center;
+    background:#ffd73b;
+}

@@ -7,7 +7,7 @@
     <image src="../../images/find_icon.png"></image>   
     <view class="tips">搜索小组活动</view>
   </view>
-  <view class="creat">创建小组</view>
+  <view class="creat" bindtap="tapCreate">创建小组</view>
 </view>
 <swiper indicator-active-color="#000" autoplay="true" interval="2600" circular="true" class="banner">
   <swiper-item>

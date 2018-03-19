@@ -1,0 +1,13 @@
+<view class="top">
+    <view class="title">当前位置</view>
+    <view class="loca">
+        <image class="icon" src="../../images/location.png"/>
+        <view class="city">北京</view>
+    </view>
+</view>
+<view class="address-list">
+    <view wx:for="{{[1,2,3,4,5]}}" class="clist">
+        <text>北京</text>
+        <image src="../../images/moreright.png"></image>
+    </view>
+</view>

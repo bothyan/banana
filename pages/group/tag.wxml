@@ -1,0 +1,14 @@
+<view class="content">
+    <view class="selectbox">
+        <text class="tag" wx:for="{{[1,2,3,4]}}">旅行</text>
+    </view>  
+    <view>
+        <text class="tag" wx:for="{{[1,2,3,4,5,6]}}">旅行</text>
+    </view>    
+    <view class="refreshbox">
+        <image src="../../images/refresh.png"></image>
+        <text>换一批</text>
+    </view>
+</view>
+<view class="confirm" bindtap="confirm">完成</view>
+<view class="cancel" bindtap="cancel">取消</view>
