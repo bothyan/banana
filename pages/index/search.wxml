@@ -1,0 +1,69 @@
+<view class="content">
+    <view class="searchbox">
+        <input type="text" value="{{searchword}}" placeholder="搜索小组、活动" bindinput="chageKeyword"/>
+        <image src="../../images/find_icon.png" bindtap="search"></image>   
+    </view>
+    <view class="navbox">
+        <view wx:if="{{navArr[0]}}" bindtap="tapNav" data-index="0" class="nav select">
+            <text>小组</text>              
+        </view>
+        <view wx:else bindtap="tapNav" data-index="0" class="nav">
+            <text>小组</text>              
+        </view>
+
+        <view wx:if="{{navArr[1]}}" bindtap="tapNav" data-index="1" class="nav select">
+            <text>活动</text>              
+        </view>
+        <view wx:else bindtap="tapNav" data-index="1" class="nav">
+            <text>活动</text>              
+        </view>
+    </view>
+    <view wx:if="{{showHistory}}" class="history">
+        <view class="h-title">
+            <text>搜索历史</text>
+            <image class="trash" src="../../images/trash.png"></image>   
+        </view> 
+        <view wx:for="{{[1,2,3,4,5]}}" class="h-list">
+            <image class="timer" src="../../images/timer.png"></image> 
+            <text data-word="历史" bindtap="tapHistory">历史</text>
+            <image class="delete" src="../../images/delete.png"></image>   
+        </view>       
+    </view>
+    <view wx:else>
+        <view wx:if="{{navArr[0]}}" class="group-list">
+            <view class="li" wx:for="{{[1,2,3,4,5,6,7,8]}}">
+                <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+                <image class="add" src="../../images/add_icon.png"></image>
+                <image class="pic" src="../../images/banner.png"></image>
+                <view class="title">这里是活动的这里是活动的标题标题</view>
+                <view class="time-box">
+                    <image class="timeicon" src="../../images/time_icon.png"></image>
+                    <text class="time">2018-03-17</text>
+                </view>    
+            </view> 
+        </view>
+        <view wx:if="{{navArr[1]}}" class="active-list">
+            <view class="li" wx:for="{{[1,2,3]}}">
+                <image class="like" src="../../images/like.png"></image> 
+                <view class="time-word">
+                    <view class="time">
+                        <text class="month">3月</text>
+                        <text class="day">07</text>
+                        <text class="hour">14:00</text>
+                    </view>
+                    <view class="title-name">
+                        <view class="title">这里是聚会的名称，最多显示两行文字</view>
+                        <view class="name">@超级商业对接群</view>
+                    </view>
+                </view>
+                <view class="address">北京 朝阳区 朝阳大街1号朝阳大厦101</view>
+                <view class="persons">
+                    <text class="num">100人参与</text>
+                    <image wx:for="{{[1,2,3,4,5]}}" src="../../images/avatar.png"></image>
+                    <text class="dian">····</text>
+                </view>
+            </view>
+        </view>
+        
+    </view>
+</view>

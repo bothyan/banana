@@ -15,19 +15,19 @@
   </swiper-item>   
 </swiper>
 <view class="navs">
-  <view class="nav">
+  <view class="nav" bindtap="tapGroupList">
     <image src="../../images/nav1.png"></image> 
     <text>人气小组</text>
   </view>
-  <view class="nav">
+  <view class="nav" bindtap="tapGroupList">
     <image src="../../images/nav2.png"></image> 
     <text>本周活动</text>
   </view>
-  <view class="nav">
+  <view class="nav" bindtap="tapGroupList">
     <image src="../../images/nav3.png"></image> 
     <text>附近活动</text>
   </view>
-  <view class="nav">
+  <view class="nav" bindtap="tapGroupList">
     <image src="../../images/nav4.png"></image> 
     <text>全部分类</text>
   </view>

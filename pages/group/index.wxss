@@ -1,0 +1,73 @@
+.content{
+    padding:0 23rpx 40rpx;
+    backgorund:#fff;
+}
+
+/* 头部筛选 */
+.navbox{
+    height:78rpx;
+}
+.nav{
+    width:352rpx;
+    height:76rpx;
+    border-bottom:2rpx solid #f5f5f5;
+    line-height:76rpx;
+    color:#666;
+    font-size:28rpx;
+    float:left;
+    text-align:center;
+}
+.nav image{
+    width:24rpx;
+    height:24rpx;
+    margin-left:10rpx;
+}
+.nav.select{
+    color:#f38200;
+    border-bottom:2rpx solid #f38200;
+}
+
+
+/*类型列表*/
+.typelist1 {
+    position:fixed;
+    z-index:10;
+    width:720rpx;
+    left:15rpx;
+    top:98rpx;
+    padding-bottom:40rpx;
+    background:#fff;
+}
+.typelist1 text{
+    width:224rpx;
+    margin:8rpx;
+    background:#ffd73b;
+    text-align:center;
+    border-radius:60rpx;
+    height:80rpx;
+    float:left;
+    line-height:80rpx;
+    color:#333333;
+    font-size:32rpx;
+    display:block;
+}
+
+.typelist2{
+    position:fixed;
+    z-index:10;
+    width:704rpx;
+    left:23rpx;
+    top:98rpx;
+    padding-bottom:40rpx;
+    background:#fff;
+}
+
+.typelist2 view{
+    width:100%;
+    color:#666;
+    font-size:32rpx;
+    height:80rpx;
+    line-height:80rpx;
+    border-bottom:2rpx solid #f5f5f5;
+    text-align:left;
+}

@@ -56,5 +56,10 @@ Page({
     wx.navigateTo({
       url:"location"
     });
+  },
+  tapGroupList:function(){
+    wx.navigateTo({
+      url:"../group/index"
+    });
   }
 })
