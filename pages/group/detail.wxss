@@ -1,0 +1,151 @@
+.top{
+    width:100%;
+    height:600rpx;
+    position:relative;
+}
+.top .banner{
+    width:100%;
+    height:600rpx;
+}
+.top .share{
+    width:40rpx;
+    height:40rpx;
+    position:absolute;
+    top:20rpx;
+    right:20rpx;
+}
+.top .location{
+    width:40rpx;
+    height:40rpx;
+    position:absolute;
+    top:20rpx;
+    left:20rpx;
+}
+.top .address{
+    color:#fff;
+    font-size:24rpx;
+    position:absolute;
+    height:40rpx;
+    top:20rpx;
+    left:70rpx;
+    line-height:40rpx;
+}
+.top .name{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:720rpx;
+    background:rgba(0,0,0,0.3);
+    font-size:32rpx;
+    color:#fff;
+    text-align:left;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    padding:15rpx;
+    line-height:50rpx;
+}
+
+.join{
+    color:#333;
+    font-size:32rpx;
+    height:70rpx;
+    line-height:70rpx;
+    width:702rpx;
+    text-align:center;
+    background:#ffd73b;
+    margin:40rpx auto;
+}    
+
+.person{
+    height:75rpx;
+    line-height:75rpx;
+    color:#333;
+    font-size:32rpx;
+    margin-top:30rpx;
+    padding:0 24rpx;
+}
+.person .num{
+    margin-right:50rpx;
+    display:inline-block;
+    float:left;
+}
+.person .avatar{
+    height:75rpx;
+    width:75rpx;
+    margin-right:5rpx;
+    display:inline-block;
+    float:left;
+}
+.person .right{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    display:inline-block;
+    margin-top:20rpx;
+}
+
+.description{
+    text-align:left;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    padding:50rpx 24rpx;
+    color:#666;
+    font-size:32rpx;
+    line-height:45rpx;
+}
+.organizer{
+    height:75rpx;
+    line-height:75rpx;
+    color:#333;
+    font-size:32rpx;
+    margin-bottom:30rpx;
+    padding:0 24rpx;
+}
+.organizer .num{
+    margin-right:50rpx;
+    display:inline-block;
+    float:left; 
+}
+.organizer .name{
+    margin-left:50rpx;
+    display:inline-block;
+    float:left; 
+}
+.organizer .avatar{
+    height:75rpx;
+    width:75rpx;
+    margin-right:5rpx;
+    display:inline-block;
+    float:left;
+}
+
+/* tab*/
+.navbox{
+    height:78rpx;
+    margin-top:10rpx;
+}
+.nav{
+    width:351rpx;
+    height:76rpx;
+    border-bottom:2rpx solid #f5f5f5;
+    line-height:76rpx;
+    color:#666;
+    font-size:28rpx;
+    float:left;
+    text-align:center;
+}
+.nav.select{
+    color:#f38200;
+    border-bottom:2rpx solid #f38200;
+}
+.con{
+    padding:0rpx 24rpx 40rpx;
+}

@@ -1,0 +1,49 @@
+
+.top{
+	padding:24rpx 24rpx 40rpx;
+	overflow:hidden;
+}
+.top .word{
+	float:left;
+	width:490rpx;
+	overflow: hidden;
+}
+.top .title{
+	color:#333;
+	font-size:28rpx;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    height:40rpx;
+    display:block;
+    line-height:40rpx;
+}
+.top .time{
+	color:#666;
+	font-size:24rpx;
+	display:block;
+	margin-top:5rpx;
+}
+.addPic{
+	width:168rpx;
+	height:68rpx;
+	line-height:68rpx;
+	float:right;
+	display:inline-block;
+	background:#ffd73b;
+	text-align:center;
+	font-size:32rpx;
+	color:#333;
+}
+
+.pis-list{
+	padding-left:24rpx;
+}
+.pis-list image{
+	width:224rpx;
+	height:224rpx;
+	float:left;
+	margin-bottom:16rpx;
+	margin-right:16rpx;
+	display:block;
+}

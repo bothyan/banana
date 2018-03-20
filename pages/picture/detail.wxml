@@ -1,0 +1,8 @@
+<view class="content">
+    <image src="../../images/banner.png" bindload="onImageLoad"></image>
+</view>
+<view class="msg">
+    <image src="../../images/avatar.png"></image>
+    <text class="name">MR wang</text>
+    <text class="time">2018-03-31</text>
+</view>

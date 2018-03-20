@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/picture/detail",
     "pages/index/index",
     "pages/index/search",
     "pages/index/location",
@@ -7,7 +8,10 @@
     "pages/my/index",
     "pages/group/index",
     "pages/group/create",
-    "pages/group/tag"
+    "pages/group/tag",
+    "pages/group/detail",
+    
+    "pages/picture/list"
   ],
   "window":{
     "backgroundTextStyle":"light",

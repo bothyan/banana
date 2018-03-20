@@ -1,0 +1,12 @@
+
+<view class="top">
+  <view class="word">
+    <text class="title">聚会名字最多16个字最多16个字名字</text>
+    <text class="time">2018-03-20</text>
+  </view>
+  <view class="addPic" bindtap="addPic">添加照片</view>
+</view>
+
+<view class="pis-list">
+  <image wx:for="{{[1,2,3,4,5]}}" src="../../images/banner.png" bindtap="tapDetail"></image>
+</view>
