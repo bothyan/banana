@@ -8,7 +8,7 @@
 
 <view class="join" bindtap="join">加入</view>
 
-<view class="person">
+<view class="person" bindtap="toMember">
     <text class="num">成员25</text>
     <image class="avatar" wx:for="{{[1,2,3,4,5,6]}}" src="../../images/avatar.png"></image>
     <image class="right" src="../../images/moreright.png"></image>

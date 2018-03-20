@@ -1,0 +1,20 @@
+<view class="member-list">
+    <view class="li">
+        <image src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <view class="transfer" bindtap="transfer">转让</view>
+        <text class="title">组织者</text>
+    </view>
+    <view class="li">
+        <image src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <view class="delete" bindtap="delete">移除</view>
+        <text class="title">共同组织者</text>
+    </view>
+    <view wx:for="{{[1,2,3]}}" class="li">
+        <image src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <text class="title">新成员</text>
+    </view>
+
+</view>

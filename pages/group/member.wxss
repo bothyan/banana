@@ -1,0 +1,47 @@
+page{
+    background:#f5f5f5;
+}
+.member-list{
+    padding:0 24rpx;
+    background:#fff;
+}
+.member-list .li{
+    height:64rpx;
+    line-height:64rpx;
+    padding:24rpx 0;
+    border-bottom:2rpx solid #f5f5f5;
+}
+.member-list .li image{
+    height:64rpx;
+    width:64rpx;
+    display:inline-block;
+    float:left;
+
+}
+.member-list .li .name{
+    font-size:32rpx;
+    color:#333;
+    height:64rpx;
+    margin-left:20rpx;
+}
+.member-list .li .title{
+    font-size:24rpx;
+    color:#999;
+    display:inline-block;
+    height:64rpx;
+    float:right;
+}
+.member-list .li .transfer,.member-list .li .delete{
+    width:88rpx;
+    height:42rpx;
+    border:2rpx solid #333;
+    display:inline-block;
+    float:right;
+    margin-left:40rpx;
+    text-align:center;
+    line-height:42rpx;
+    margin-top:11rpx;
+    color:#333;
+    font-size:24rpx;
+    border-radius:5rpx;
+}

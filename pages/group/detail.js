@@ -26,5 +26,10 @@ Page({
     var arr = [false,false];
     arr[index] = true;
     this.setData({navArr:arr});
+  },
+  toMember:function(){
+    wx.navigateTo({
+      url:"member"
+    });
   }
 })
