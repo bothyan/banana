@@ -1,0 +1,29 @@
+<view class="tips">当活动开始后，如果双方互有好感，系统将发送消息通知双方</view>
+<view class="msg">
+    <text class="num">已报名：4人</text>
+    <text class="send" bindtap="sendMsg">群发信息</text>
+</view>
+<view class="member-list">
+    <view class="li">
+        <image class="avatar" src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <image class="gender" src="../../images/male.png"></image>
+        <image class="like" src="../../images/like.png"></image>
+        <text class="title">对他有好感</text>
+    </view>
+    <view class="li">
+        <image class="avatar" src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <image class="gender" src="../../images/female.png"></image>
+        <image class="like" src="../../images/like.png"></image>
+        <text class="title">对他有好感</text>
+    </view>
+    <view wx:for="{{[1,2,3]}}" class="li">
+        <image class="avatar" src="../../images/avatar.png"></image>
+        <text class="name">MR wang</text>
+        <image class="gender" src="../../images/male.png"></image>
+        <image class="like" src="../../images/unlike.png"></image>
+        <text class="title">对他有好感</text>
+    </view>
+
+</view>

@@ -1,0 +1,126 @@
+page{
+    background:#f5f5f5;
+}
+.content{
+    background:#fff;
+}
+.title{
+    color:#999;
+    font-size:32rpx;
+    padding:0 24rpx;
+    height:90rpx;
+    line-height:90rpx;
+    border-bottom: 2rpx solid #f5f5f5;
+}
+.times{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 2rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+}
+.times text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+.times .tagtips{
+    float:right;
+    color:#999;
+    font-size:24rpx;
+}
+
+.address{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+}
+.address text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+.address image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+
+.numbox{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+}
+.numbox text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+.numbox .num{
+    float:right;
+    color:#999;
+    font-size:24rpx;
+    display:inline-block;
+    height:80rpx;
+    line-height:80rpx;
+    width:100rpx;
+}
+
+
+.des{
+    padding:24rpx;
+}
+.des .tips{
+    color:#333;
+    font-size:32rpx;
+    margin-bottom:20rpx;
+}
+.des textarea{
+    color:#999;
+    font-size:32rpx;
+    width:100%;
+}
+
+.create{
+    color:#333;
+    font-size:32rpx;
+    height:88rpx;
+    line-height:88rpx;
+    width:702rpx;
+    left:24rpx;
+    bottom:188rpx;
+    text-align:center;
+    background:#ffd73b;
+    position:fixed;
+}
+.cancel{
+    color:#999;
+    font-size:32rpx;
+    height:86rpx;
+    line-height:86rpx;
+    width:700rpx;
+    left:24rpx;
+    bottom:80rpx;
+    text-align:center;
+    border:2rpx solid #999;
+    position:fixed;
+}

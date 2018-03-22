@@ -1,0 +1,5 @@
+<image src="../../images/finish.png" class="icon"></image>
+<view class="name">小组名称小组名称小组名称</view>
+<view class="tips1">创建成功</view>
+<view class="tips2">分享给好友，让他们加入你的小组</view>
+<view class="complete" bindtap="complete">完成</view>

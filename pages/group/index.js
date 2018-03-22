@@ -13,7 +13,9 @@ Page({
   },
   tapNav:function(e){
     var index = e.currentTarget.dataset.index;
-    this.changeNav(index);
+    var navs = [false,false];
+    navs[index] = !navs[index];
+    this.setData({navArr:navs});
   },
   tapTypes1:function(e){
     var word = e.currentTarget.dataset.word;

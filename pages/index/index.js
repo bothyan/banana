@@ -66,5 +66,10 @@ Page({
     wx.navigateTo({
       url:"../group/create"
     });
+  },
+  tapMygroup:function(){
+    wx.navigateTo({
+      url:"../my/mygroup"
+    });
   }
 })

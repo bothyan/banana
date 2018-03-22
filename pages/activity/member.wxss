@@ -1,0 +1,67 @@
+
+.tips{
+    color:#999;
+    font-size:32rpx;
+    padding:24rpx;
+}
+.msg{
+    font-size:32rpx;
+    height:90rpx;
+    line-height: 90rpx;
+    background: #ebebeb;
+    padding:0 24rpx;
+}
+.msg .num{
+    color:#333;
+    display:inline-block;
+}
+.msg .send{
+    color:#666;
+    display:inline-block;float: right;
+}
+.member-list{
+    padding:0 24rpx;
+    background:#fff;
+}
+.member-list .li{
+    height:80rpx;
+    line-height:80rpx;
+    padding:24rpx 0;
+    border-bottom:2rpx solid #f5f5f5;
+}
+.member-list .li .avatar{
+    height:80rpx;
+    width:80rpx;
+    display:inline-block;
+    float:left;
+}
+.member-list .li .gender{
+    height:40rpx;
+    width:40rpx;
+    display:inline-block;
+    float:left;
+    margin-left:16rpx;
+    margin-top:20rpx;
+}
+.member-list .li .like{
+    width:44rpx;
+    height:44rpx;
+    display:inline-block;
+    float:right;
+    margin-top:18rpx;
+    margin-left:16rpx;
+}
+.member-list .li .name{
+    font-size:32rpx;
+    color:#333;
+    height:80rpx;
+    margin-left:40rpx;
+    float:left;
+}
+.member-list .li .title{
+    font-size:24rpx;
+    color:#f38200;
+    display:inline-block;
+    height:80rpx;
+    float:right;
+}

@@ -1,0 +1,29 @@
+<view class="content">
+    <input class="title" type="text" placeholder="活动名称" />
+
+    <view class="times time1" bindtap="tabTime">
+        <text>开始时间</text>
+        <text class="tagtips">2018-03-17,10:00</text>
+    </view>
+
+     <view class="times time2" bindtap="tabTime">
+        <text>结束时间</text>
+        <text class="tagtips">2018-03-17,10:00</text>
+    </view>
+
+    <view class="address" bindtap="cAddress">
+        <text>活动地点</text>
+        <image class="right" src="../../images/moreright.png"></image>
+    </view>
+    <view class="numbox" bindtap="numbox">
+        <text>名额</text>
+        <input class="num" type="num"  placeholder="默认不限" />
+    </view>
+    <view class="des">
+        <view class="tips">活动简介</view>
+        <textarea name="" placeholder="在此编辑您的活动"></textarea>
+    </view>
+</view>
+
+<view class="create" bindtap="create">发布</view>
+<view class="cancel" bindtap="cancel">取消</view>

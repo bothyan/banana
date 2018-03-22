@@ -4,15 +4,19 @@
     "pages/index/index",
     "pages/index/search",
     "pages/index/location",
-    "pages/activity/index",
     "pages/my/index",
     "pages/group/index",
     "pages/group/create",
     "pages/group/tag",
     "pages/group/member",
+    "pages/group/success",
     "pages/group/detail",
     "pages/picture/list",
-    "pages/picture/detail"
+    "pages/picture/detail",
+    "pages/activity/index",
+    "pages/activity/detail",
+    "pages/activity/member",
+    "pages/activity/create"
   ],
   "window":{
     "backgroundTextStyle":"light",

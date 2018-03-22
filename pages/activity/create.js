@@ -14,5 +14,21 @@ Page({
   },
   onLoad: function () {
    
+  },
+  cAddress:function(){
+    wx.navigateTo({
+      url:"../index/location"
+    });
+  },
+  create:function(){
+
+  },
+  tabTime:function(){
+
+  },
+  cancel:function(){
+    wx.navigateBack({
+      delta: 1
+    })
   }
 })

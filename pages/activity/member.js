@@ -14,5 +14,8 @@ Page({
   },
   onLoad: function () {
    
+  },
+  sendMsg:function(){
+    
   }
 })
