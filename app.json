@@ -1,6 +1,5 @@
 {
   "pages":[
-    
     "pages/index/index",
     "pages/index/search",
     "pages/index/location",
@@ -15,6 +14,7 @@
     "pages/picture/detail",
     "pages/activity/index",
     "pages/activity/detail",
+    "pages/activity/map",
     "pages/activity/member",
     "pages/activity/create"
   ],

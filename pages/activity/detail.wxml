@@ -1,0 +1,70 @@
+<view class="content">
+    <view class="atitles">这里是聚会的名称，最多显示两行文字</view>
+
+    <view class="atime">
+        <image class="time_icon" src="../../images/time_icon.png"></image>
+        <text>5月25日，星期六，15:00-16:30</text>
+        <image class="right" src="../../images/moreright.png"></image>
+    </view>
+    <view class="aaddress" bindtap="toAddress">
+        <image  class="location_icon" src="../../images/location_icon.png"></image>
+        <text>北京 朝阳区 朝阳大街1号朝阳大厦101</text>
+        <image class="right" src="../../images/moreright.png"></image>
+    </view>
+
+    <view class="apersons">
+        <text class="num">100人参与</text>
+        <image class="aavatar" wx:for="{{[1,2,3,4,5]}}" src="../../images/avatar.png"></image>
+        <text class="dian">····</text>
+        <image class="right" src="../../images/moreright.png"></image>
+    </view>
+
+    <view class="basemsg">
+        <image class="img" src="../../images/avatar.png"></image> 
+        <view class="basenamecity">
+            <view class="basename">这里是小团伙的名称</view>
+            <view class="basecity">北京</view>
+        </view>
+    </view>
+
+    <view class="ades">
+        这里是活动的描述这里是活动的描述这里是活动的描述这里是活动的描述这里是活动的描述
+    </view>
+
+    <view class="pictitle">活动照片</view>
+
+    <image wx:for="{{[1,2]}}" class="apics" src="../../images/banner.png"></image>
+
+    <view class="recenta">其他近期活动</view>
+    <view class="active-list">
+        <view class="li" wx:for="{{[1,2,3]}}">
+            <image class="like" src="../../images/like.png"></image> 
+            <view class="time-word">
+                <view class="time">
+                    <text class="month">3月</text>
+                    <text class="day">07</text>
+                    <text class="hour">14:00</text>
+                </view>
+                <view class="title-name">
+                    <view class="title">这里是聚会的名称，最多显示两行文字</view>
+                    <view class="name">@超级商业对接群</view>
+                </view>
+            </view>
+            <view class="address">北京 朝阳区 朝阳大街1号朝阳大厦101</view>
+            <view class="persons">
+                <text class="num">100人参与</text>
+                <image wx:for="{{[1,2,3,4,5]}}" src="../../images/avatar.png"></image>
+                <text class="dian">····</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="alls">查看全部活动 ></view> 
+</view>
+<view class="buttons">
+    <view class="collect" bindtap="collect">
+        <image class="like" src="../../images/unlike.png"></image> 
+        <text>收藏</text>
+    </view>
+    <view class="join"  bindtap="join">加入和报名</view>
+</view>
