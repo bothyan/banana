@@ -1,0 +1,18 @@
+<view class="content">
+    <view class="pic" bindtap="uploadPic">
+        <text>头像</text>
+        <image class="right" src="../../images/moreright.png"></image>
+        <image class="photo" src="../../images/photo.png"></image>
+    </view>
+    <view class="namebox">
+        <text>名字</text>
+        <image class="right" src="../../images/moreright.png"></image>
+        <input class="name" type="text"  placeholder="Cris Wang" />
+    </view>
+    <view class="telbox">
+        <text>手机</text>
+        <image class="right" src="../../images/moreright.png"></image>
+        <input class="tel" type="text"  placeholder="请输入" />
+    </view>
+</view>
+<view class="save" bindtap="save">保存</view>

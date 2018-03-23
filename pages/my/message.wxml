@@ -1,0 +1,10 @@
+<view class="message-list">
+    <view wx:for="{{[1,2,3]}}" class="li">
+        <image src="../../images/avatar.png"></image>
+        <view class="msg">
+            <text class="name">活动名称</text>
+            <text class="des">等不及来见你</text>
+        </view>
+        <text class="time">2018-03-18 18:00</text>
+    </view>
+</view>

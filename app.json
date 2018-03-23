@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/index/search",
     "pages/index/location",
-    "pages/my/index",
     "pages/group/index",
     "pages/group/create",
     "pages/group/tag",
@@ -16,7 +15,13 @@
     "pages/activity/detail",
     "pages/activity/map",
     "pages/activity/member",
-    "pages/activity/create"
+    "pages/activity/create",
+    "pages/my/index",
+    "pages/my/collection",
+    "pages/my/edit",
+    "pages/my/message",
+    "pages/my/myactivity",
+    "pages/my/mygroup"
   ],
   "window":{
     "backgroundTextStyle":"light",

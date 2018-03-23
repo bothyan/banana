@@ -1,0 +1,44 @@
+<view class="content">
+    <view class="navbox">
+        <view wx:if="{{navArr[0]}}" bindtap="tapNav" data-index="0" class="nav select">
+            <text>我参与的</text>              
+        </view>
+        <view wx:else bindtap="tapNav" data-index="0" class="nav">
+            <text>我参与的</text>              
+        </view>
+
+        <view wx:if="{{navArr[1]}}" bindtap="tapNav" data-index="1" class="nav select">
+            <text>我管理的</text>              
+        </view>
+        <view wx:else bindtap="tapNav" data-index="1" class="nav">
+            <text>我管理的</text>              
+        </view>
+    </view>
+    <view>
+        <view wx:if="{{navArr[0]}}" class="group-list">
+            <view class="li" wx:for="{{[1,2,3,4,5,6,7,8]}}">
+                <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+                <image class="add" src="../../images/add_icon.png"></image>
+                <image class="pic" src="../../images/banner.png"></image>
+                <view class="title">这里是活动的这里是活动的标题标题</view>
+                <view class="time-box">
+                    <image class="timeicon" src="../../images/time_icon.png"></image>
+                    <text class="time">2018-03-17</text>
+                </view>    
+            </view> 
+        </view>
+        <view wx:if="{{navArr[1]}}" class="group-list">
+            <view class="li" wx:for="{{[1,2,3,4,5,6,7,8]}}">
+                <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
+                <image class="add" src="../../images/add_icon.png"></image>
+                <image class="pic" src="../../images/banner.png"></image>
+                <view class="title">这里是活动的这里是活动的标题标题</view>
+                <view class="time-box">
+                    <image class="timeicon" src="../../images/time_icon.png"></image>
+                    <text class="time">2018-03-17</text>
+                </view>    
+            </view> 
+        </view>
+        
+    </view>
+</view>

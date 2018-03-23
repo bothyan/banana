@@ -4,15 +4,18 @@ const app = getApp()
 
 Page({
   data: {
-
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    navArr:[true,false,false],
+    data1:[],
+    data2:[],
+    data3:[]
   },
   onLoad: function () {
-   
+    
+  },
+  tapNav:function(e){
+    var index = e.currentTarget.dataset.index;
+    var arr = [false,false,false];
+    arr[index] = true;
+    this.setData({navArr:arr});
   }
 })

@@ -1,13 +1,37 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="top">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view class="name">{{userInfo.nickName}}</view>
+  <view class="city">北京</view>
+  <image bindtap="edit" class="setings" src="../../images/setings.png"></image>
+</view>
+
+<view class="navs">
+  <view class="navs1" bindtap="mygroup">
+    <text class="text1">11</text>
+    <text class="text2">小团伙</text>
+  </view> 
+  <view  class="navs2" bindtap="myactivity">
+    <text class="text1">26</text>
+    <text class="text2">活动</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <view  class="navs3"  bindtap="collection">
+    <text class="text1">6</text>
+    <text class="text2">收藏</text>
+  </view>   
+</view>
+
+<view class="message"  bindtap="message">
+    <text>消息</text>
+    <image class="right" src="../../images/moreright.png"></image>
+    <view class="messagenum">3</view>
+</view>
+
+<view class="shouce">
+    <text>组织者手册</text>
+    <image class="right" src="../../images/moreright.png"></image>
+</view>
+
+<view class="fankui">
+    <text>意见反馈</text>
+    <image class="right" src="../../images/moreright.png"></image>
 </view>

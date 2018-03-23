@@ -1,21 +1,152 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page{
+    background:#f5f5f5;
+}
+.top{
+    width:100%;
+    position:relative;
+    height:320rpx;
+    padding-top:80rpx;
+}
+.top .avatar{
+    width:160rpx;
+    height:160rpx;
+    margin:0 auto 20rpx;
+    display:block;
+}
+.top .name{
+    color:#333;
+    font-size:40rpx;
+    text-align:center;
+}
+.top .city{
+    color:#999;
+    font-size:28rpx;
+    margin-top:8rpx;
+    text-align:center;
+}
+.top .setings{
+    position:absolute;
+    width:36rpx;
+    height:36rpx;
+    bottom:40rpx;
+    right:24rpx;
+}
+.navs{
+    height:105rpx;
+    padding:30rpx 0;
+    border-bottom: 8rpx solid #f5f5f5;
+    background:#fff;
+}
+.navs1,.navs2,.navs3{
+    float:left;
+    height:105rpx;
+    width:250rpx;
+    text-align:center;
+}
+.navs2{
+    width:246rpx;
+    border-left:2rpx solid #c2c2c2;
+    border-right:2rpx solid #c2c2c2;
+}
+.text1,.text2{
+    display:block;
+    color:#333;
+}
+.text1{
+    font-size:40rpx;
+}
+.text2{
+    font-size:28rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.message{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+    background:#fff;
+}
+.message text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.message image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+.message .messagenum{
+    display:inline-block;
+    float:right;
+    color:#fff;
+    width:40rpx;
+    height:40rpx;
+    margin-top:20rpx;
+    background:#f38200;
+    text-align: center;
+    line-height:40rpx;
+    border-radius:100%;
+}
+.shouce{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+    background:#fff;
+}
+.shouce text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
 }
 
-.usermotto {
-  margin-top: 200px;
+.shouce image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
+}
+
+.fankui{
+    padding:0 24rpx;
+    margin:0 auto;
+    color:#333;
+    font-size:32rpx;
+    overflow: hidden;
+    border-bottom: 8rpx solid #f5f5f5;
+    height:80rpx;
+    line-height:80rpx;
+    background:#fff;
+}
+.fankui text{
+    float:left;
+    height:80rpx;
+    line-height:80rpx;
+    display:inline-block;
+}
+
+.fankui image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    margin-top:22rpx;
+    display:inline-block;
+    margin-right:10rpx;
 }
