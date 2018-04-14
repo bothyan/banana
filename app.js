@@ -1,24 +1,47 @@
 //app.js
 App({
+  globalData: {
+    userInfo: null,
+    host:"https://www.yuandibaozha.com/ydbz"
+  },
   onLaunch: function () {
     // 展示本地存储能力
+    var that = this;
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
     // 登录
     wx.login({
-      success: res => {
+      success: function(res){
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code);
+        wx.request({
+            url: that.globalData.host+'/v1.0/weapp/common/doLogin/',
+            /*header: {
+                'content-type': 'application/json' // 默认值
+            },*/
+            header: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-Requested-With": "XMLHttpRequest"
+            },
+            method:"post",
+            data:{
+              jsCode:res.code
+            },
+            success: function(res) {   
+              console.log(res);
+            }
+        })
       }
     })
     // 获取用户信息
     wx.getSetting({
-      success: res => {
+      success: function(res){
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
-            success: res => {
+            /*success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
 
@@ -27,13 +50,11 @@ App({
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
-            }
+            }*/
           })
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null
   }
+
 })

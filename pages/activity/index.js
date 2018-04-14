@@ -54,5 +54,10 @@ Page({
     var navs = this.data.navArr;
     navs[index] = !navs[index];
     this.setData({navArr:navs});
+  },
+  toAcDetail:function(){
+    wx.navigateTo({
+      url:"detail"
+    });
   }
 })

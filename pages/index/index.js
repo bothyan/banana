@@ -8,6 +8,28 @@ Page({
     //hasUserInfo: false,
     //canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  onShow:function(){
+    /*wx.chooseLocation({
+        success:function(res){
+          console.log(res);
+        },
+        fail:function(res){
+
+        }
+    });
+
+     wx.openSetting({
+      success:function(res){
+        if (!res.authSetting["scope.userInfo"] || !res.authSetting["scope.userLocation"]) {
+             //这里是授权成功之后 填写你重新获取数据的js
+             //参考:
+              that.getLogiCallback('',      function(){
+                callback('')
+              })                                   
+        }
+      }
+    })*/
+  },
   onLoad: function () {
     /*if (app.globalData.userInfo) {
       this.setData({
@@ -70,6 +92,16 @@ Page({
   tapMygroup:function(){
     wx.navigateTo({
       url:"../my/mygroup"
+    });
+  },
+  toGroupDetail:function(){
+    wx.navigateTo({
+      url:"../group/detail"
+    });
+  },
+  toAcDetail:function(){
+    wx.navigateTo({
+      url:"../activity/detail"
     });
   }
 })

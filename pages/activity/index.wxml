@@ -55,18 +55,18 @@
     <view class="active-list">
         <view class="li" wx:for="{{[1,2,3]}}">
             <image class="like" src="../../images/like.png"></image> 
-            <view class="time-word">
+            <view class="time-word" bindtap="toAcDetail">
                 <view class="time">
                     <text class="month">3月</text>
                     <text class="day">07</text>
                     <text class="hour">14:00</text>
                 </view>
-                <view class="title-name">
+                <view class="title-name" bindtap="toAcDetail">
                     <view class="title">这里是聚会的名称，最多显示两行文字</view>
                     <view class="name">@超级商业对接群</view>
                 </view>
             </view>
-            <view class="address">北京 朝阳区 朝阳大街1号朝阳大厦101</view>
+            <view class="address" bindtap="toAcDetail">北京 朝阳区 朝阳大街1号朝阳大厦101</view>
             <view class="persons">
                 <text class="num">100人参与</text>
                 <image wx:for="{{[1,2,3,4,5]}}" src="../../images/avatar.png"></image>

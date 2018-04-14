@@ -40,7 +40,7 @@
   </view>
   <view class="box">
     <view class="libox" style="width:900rpx;">
-      <view class="li" wx:for="{{[1,2,3]}}">
+      <view class="li" wx:for="{{[1,2,3]}}" bindtap="toGroupDetail">
         <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
         <image class="pic" src="../../images/banner.png"></image>
         <view class="title">这里是活动的标题</view>
@@ -60,7 +60,7 @@
   </view>
   <view class="box">
     <view class="libox" style="width:900rpx;">
-      <view class="li" wx:for="{{[1,2,3]}}">
+      <view class="li" wx:for="{{[1,2,3]}}"  bindtap="toGroupDetail">
         <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
         <image class="pic" src="../../images/banner.png"></image>
         <view class="title">这里是活动的标题</view>
@@ -80,7 +80,7 @@
   </view>
   <view class="box">
     <view class="libox" style="width:900rpx;">
-      <view class="li" wx:for="{{[1,2,3]}}">
+      <view class="li" wx:for="{{[1,2,3]}}"  bindtap="toAcDetail">
         <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
         <image class="add" src="../../images/add_icon.png"></image>
         <image class="pic" src="../../images/banner.png"></image>
@@ -101,7 +101,7 @@
   </view>
   <view class="box">
     <view class="libox" style="width:900rpx;">
-      <view class="li" wx:for="{{[1,2,3]}}">
+      <view class="li" wx:for="{{[1,2,3]}}" bindtap="toAcDetail">
         <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
         <image class="add" src="../../images/add_icon.png"></image>
         <image class="pic" src="../../images/banner.png"></image>
