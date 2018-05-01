@@ -115,14 +115,14 @@
 
 }
 .panel .box .libox{
-
+	
 }
 .panel .li{
 	width:280rpx;
-	float:left;
 	margin-right:20rpx;
 	position:relative;
 	display:inline;
+	float:left;
 }
 .panel .li .add{
 	width:36rpx;

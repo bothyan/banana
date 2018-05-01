@@ -3,7 +3,7 @@
         <text class="tag" wx:for="{{[1,2,3,4]}}">旅行</text>
     </view>  
     <view>
-        <text class="tag" wx:for="{{[1,2,3,4,5,6]}}">旅行</text>
+        <text class="tag" wx:for="{{tagList}}" data-id="{{item._id}}" data-word="{{item.tag}}" bindtap="tapTypes1">{{item.tag}}</text>
     </view>    
     <view class="refreshbox">
         <image src="../../images/refresh.png"></image>

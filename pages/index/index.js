@@ -4,9 +4,20 @@ const app = getApp()
 
 Page({
   data: {
-    
-    //hasUserInfo: false,
-    //canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls : [  
+      { image: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" },  
+      { image: "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" },  
+      { image: "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" }  
+    ],
+    banners:[],
+    myOrganizations:[],
+    activitiesOfThisWeek:[],
+    hitsOrganizations:[],
+    tagList:[],
+    indicatorDots: true,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000  
   },
   onShow:function(){
     /*wx.chooseLocation({
@@ -17,7 +28,6 @@ Page({
 
         }
     });
-
      wx.openSetting({
       success:function(res){
         if (!res.authSetting["scope.userInfo"] || !res.authSetting["scope.userLocation"]) {
@@ -31,6 +41,8 @@ Page({
     })*/
   },
   onLoad: function () {
+    this.getIndexData();
+    this.getTagList();
     /*if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -58,13 +70,55 @@ Page({
       })
     }*/
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  getIndexData:function(){
+    var that = this;
+    app.getJson(app.urlMap.indexData,"get",{
+      ydbz_token:app.globalData.ydbz_token
+    },function(res){
+      res.data.data.banners.map(function(item,key){
+        item.headImg = app.globalData.picHost + item.headImg 
+        return item;
+      });
+      res.data.data.myOrganizations.map(function(item,key){
+        item.headImg = app.globalData.picHost + item.headImg; 
+        item.updateTime = item.updateTime.substr(0 , 10);
+        return item;
+      });
+      res.data.data.activitiesOfThisWeek.map(function(item,key){
+        item.headImg = app.globalData.picHost + item.headImg; 
+        item.updateTime = item.updateTime.substr(0 , 10);
+        return item;
+      });
+      res.data.data.hitsOrganizations.map(function(item,key){
+        item.headImg = app.globalData.picHost + item.headImg; 
+        item.updateTime = item.updateTime.substr(0 , 10);
+        return item;
+      });
+      that.setData({
+        banners:res.data.data.banners,
+        myOrganizations:res.data.data.myOrganizations,
+        activitiesOfThisWeek:res.data.data.activitiesOfThisWeek,
+        hitsOrganizations:res.data.data.hitsOrganizations
+      })
+    });
+  },
+  getTagList:function(){
+    var that = this;
+    app.getJson(app.urlMap.groundTag,"get",{
+      ydbz_token:app.globalData.ydbz_token,
+      page:1,
+      pageSize:15
+    },function(res){
+      that.setData({
+        tagList:res.data.data.list,
+      })
+    });
+  },
+  toGroupTagList:function(e){
+    var id = e.currentTarget.dataset.tag;
+    wx.navigateTo({
+      url:"../group/index?tag="+id
+    });
   },
   tapSearch:function(){
     wx.navigateTo({
@@ -79,9 +133,10 @@ Page({
       url:"location"
     });
   },
-  tapGroupList:function(){
+  toGroupSortList:function(e){
+    var id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url:"../group/index"
+      url:"../group/index?sort="+id
     });
   },
   tapCreate:function(){

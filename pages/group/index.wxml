@@ -19,25 +19,24 @@
     </view>
     <view wx:if="{{navArr[0]}}">
         <view class="typelist1">
-            <text wx:for="{{[1,2,3,4,5,6,7,8]}}" data-word="科技" bindtap="tapTypes1">科技</text>
+            <text wx:for="{{tagList}}" data-id="{{item._id}}" data-word="{{item.tag}}" bindtap="tapTypes1">{{item.tag}}</text>
         </view>
     </view>
 
     <view wx:if="{{navArr[1]}}">
         <view class="typelist2">
-            <view wx:for="{{[1,2,3]}}" data-word="综合" bindtap="tapTypes2">综合</view>
+            <view wx:for="{{sortList}}" data-id="{{item.value}}" data-word="{{item.text}}" bindtap="tapTypes2">{{item.text}}</view>
         </view>
     </view>
 
     <view class="group-list">
-        <view class="li" wx:for="{{[1,2,3,4,5,6,7,8]}}">
-            <view class="name">这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称这里是小组的名称</view>
-            <image class="add" src="../../images/add_icon.png"></image>
-            <image class="pic" src="../../images/banner.png"></image>
-            <view class="title">这里是活动的这里是活动的标题标题</view>
+        <view class="li" wx:for="{{grounpList}}" bindtap="toGroupDetail">
+            <view class="name">{{item.desc}}</view>
+            <image class="pic" src="{{item.headImg}}"></image>
+            <view class="title">{{item.nickname}}</view>
             <view class="time-box">
                 <image class="timeicon" src="../../images/time_icon.png"></image>
-                <text class="time">2018-03-17</text>
+                <text class="time">{{item.updateTime}}</text>
             </view>    
         </view> 
     </view>
